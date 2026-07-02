@@ -627,6 +627,45 @@ footer .credit a svg{width:16px;height:16px;}
 }
 .cv-card .cv-ex b{color:var(--ink);font-style:normal;}
 
+/* ============ VERB DEEP-DIVE PAGES (App. G) ============ */
+.vd-card{border:1px solid var(--line);border-left:5px solid var(--brand-purple);border-radius:10px;background:var(--card);margin:14px 0;}
+.vd-card.open{box-shadow:var(--shadow);border-left-color:var(--brand-pink);}
+.vd-head{display:flex;align-items:center;gap:14px;padding:13px 18px;cursor:pointer;}
+.vd-head:hover{background:#faf5ff;}
+.vd-rank{flex-shrink:0;width:48px;height:48px;border-radius:9px;background:var(--grad);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'PT Sans',sans-serif;font-weight:700;line-height:1.15;}
+.vd-rank b{font-size:15px;}
+.vd-rank span{font-size:8px;letter-spacing:.09em;text-transform:uppercase;opacity:.85;}
+.vd-hgroup{min-width:0;}
+.vd-inf{font-family:'Playfair Display',serif;font-weight:700;font-size:21px;color:var(--red-deep);line-height:1.2;}
+.vd-inf .vd-slash{color:var(--ink-faint);font-weight:400;padding:0 2px;}
+.vd-inf .vd-perf{color:var(--brand-pink);}
+.vd-en{font-style:italic;color:var(--ink-soft);font-size:13.5px;}
+.vd-pill{margin-left:auto;flex-shrink:0;font-family:'PT Sans',sans-serif;font-size:10.5px;font-weight:700;color:#fff;padding:3px 10px;border-radius:20px;letter-spacing:.05em;}
+.vd-hint{flex-shrink:0;font-family:'PT Sans',sans-serif;font-size:11px;color:var(--ink-faint);}
+.vd-card.open .vd-hint{display:none;}
+.vd-body{display:none;padding:2px 20px 20px;border-top:1px dashed var(--line-strong);}
+.vd-card.open .vd-body{display:block;}
+.vd-body h5{font-family:'PT Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:18px 0 8px;}
+.vd-asp{font-size:14.5px;color:var(--ink-soft);}
+.vd-gov-row{display:flex;gap:10px;align-items:baseline;margin:7px 0;font-size:14.5px;flex-wrap:wrap;}
+.vd-cbadge{flex-shrink:0;font-family:'PT Sans',sans-serif;font-size:10px;font-weight:700;color:#fff;padding:2px 7px;border-radius:3px;letter-spacing:.05em;}
+.vd-gov-row .pat{font-weight:700;color:var(--ink);}
+.vd-gov-row .gex{color:var(--ink-soft);font-style:italic;font-size:13.5px;}
+.vd-cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 22px;}
+.vd-cols h6{font-family:'PT Sans',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 5px;}
+.vd-grid{display:grid;grid-template-columns:auto 1fr;gap:3px 14px;font-size:14px;}
+.vd-grid .prs{color:var(--ink-faint);font-family:'PT Sans',sans-serif;font-size:12.5px;}
+.vd-grid .frm{font-weight:700;color:var(--ink);}
+.vd-futnote{font-size:13px;color:var(--ink-soft);font-style:italic;margin-top:9px;}
+.vd-impv{font-size:15px;}
+.vd-impv b{color:var(--red-deep);}
+.vd-impv .lbl{font-family:'PT Sans',sans-serif;font-size:11.5px;color:var(--ink-faint);}
+.vd-expr{margin:6px 0;font-size:15px;}
+.vd-expr b{color:var(--red-deep);}
+.vd-expr .xen{color:var(--ink-soft);font-style:italic;font-size:14px;}
+.vd-note{font-size:13.5px;color:var(--ink-soft);font-style:italic;margin-top:14px;border-left:3px solid var(--line-strong);padding-left:12px;}
+@media(max-width:640px){.vd-cols{grid-template-columns:1fr;}.vd-pill{display:none;}}
+
 @media(max-width:1040px){
   .wrap{padding:0 24px 120px;}
   .hero{padding:84px 24px 54px;}
@@ -721,17 +760,18 @@ footer .credit a svg{width:16px;height:16px;}
       <a href="#cheatsheet"><span class="en">D. Master Grammar Grid</span><span class="rux">Сводная таблица падежей</span></a>
       <a href="#vocabulary"><span class="en">E. Core Vocabulary</span><span class="rux">Базовая лексика</span></a>
       <a href="#verblist"><span class="en">F. Essential Verbs</span><span class="rux">Глаголы и видовые пары</span></a>
-      <a href="#verbtest"><span class="en">G. 50-Question Verb Test</span><span class="rux">Тест по глаголам</span></a>
+      <a href="#verbdict"><span class="en">G. Verb Deep-Dive Pages</span><span class="rux">Глаголы в деталях</span></a>
+      <a href="#verbtest"><span class="en">H. 50-Question Verb Test</span><span class="rux">Тест по глаголам</span></a>
     </div>
     <div class="nav-group">
       <div class="grp-label">Level Roadmap &amp; Fluency</div>
-      <a href="#roadmap"><span class="en">H. CEFR Roadmap A1 → C1</span><span class="rux">Карта изучения языка</span></a>
+      <a href="#roadmap"><span class="en">I. CEFR Roadmap A1 → C1</span><span class="rux">Карта изучения языка</span></a>
       <a href="#lvl-a1" class="nav-sub"><span class="en">— A1 Beginner</span></a>
       <a href="#lvl-a2" class="nav-sub"><span class="en">— A2 Elementary</span></a>
       <a href="#lvl-b1" class="nav-sub"><span class="en">— B1 Intermediate</span></a>
       <a href="#lvl-b2" class="nav-sub"><span class="en">— B2 Upper-int.</span></a>
       <a href="#lvl-c1" class="nav-sub"><span class="en">— C1 Advanced</span></a>
-      <a href="#fluency"><span class="en">I. Fluency &amp; Idiom</span><span class="rux">К беглой речи</span></a>
+      <a href="#fluency"><span class="en">J. Fluency &amp; Idiom</span><span class="rux">К беглой речи</span></a>
     </div>
   </nav>
 </aside>
@@ -748,6 +788,7 @@ footer .credit a svg{width:16px;height:16px;}
       <span>6 Cases · 6 Падежей</span>
       <span>Master grammar grid</span>
       <span>~500 verbs &amp; aspect pairs</span>
+      <span>25 verb deep-dive pages</span>
       <span>Click-to-expand verb cards</span>
       <span>Verb-government maps</span>
       <span>CEFR roadmap A1 → C1</span>
@@ -5281,9 +5322,472 @@ footer .credit a svg{width:16px;height:16px;}
   <p class="tbl-note">491 verbs. "imperfective, no pair" marks verbs that have no standard perfective partner.</p>
 </section>
 
-<!-- ===== APP. G — VERB TEST ===== -->
+<!-- ===== APP. G — VERB DEEP-DIVE PAGES ===== -->
+<section id="verbdict">
+  <span class="sec-tag">Appendix G · Verb pages · <span class="cefr a1">A1</span>–<span class="cefr b1">B1</span></span>
+  <h2 class="sec">Verb Deep-Dive Pages<span class="ru">Глаго́лы в дета́лях</span></h2>
+  <p class="lead">The 25 highest-value verbs of Russian, each as a complete mini-page: infinitive, meaning, aspect pair, full conjugation in every tense, imperative, participles, gerunds, common expressions, a model conversation, related verbs and a frequency rank — plus, right at the top of every page, <strong>which case the verb governs</strong>.</p>
+  <div class="box rule">
+    <div class="bx-t">Read the case badge first</div>
+    Russian verbs dictate the case of the words that follow them. The coloured pill on each card shows the verb's signature case at a glance, and the <strong>Case government</strong> block inside spells out every pattern with an example: <span class="ru-word">помога́ть</span> takes the <b>dative</b> (помога́ть <b>ма́ме</b>), <span class="ru-word">боя́ться</span> takes the <b>genitive</b> (боя́ться <b>темноты́</b>), <span class="ru-word">занима́ться</span> takes the <b>instrumental</b> (занима́ться <b>спо́ртом</b>). Learn the case together with the verb — never separately.
+  </div>
+  <div class="box tip">
+    <div class="bx-t">How to use these pages</div>
+    Click a card to open the full page; click again to fold it shut. The <b>#</b> badge is the verb's approximate frequency rank among Russian verbs (based on modern frequency corpora — treat it as a guide, not gospel). Where a form does not exist or is not used in living Russian, you will see a dash with a note. For the full searchable bank of ~500 verbs, see <a href="#verblist" style="color:var(--red);font-weight:700;">Appendix F</a>.
+  </div>
+  <div class="vfilter">
+    <input id="vdictSearch" type="text" placeholder="Filter verb pages — type Russian or English…">
+  </div>
+  <div id="vdictBody"></div>
+</section>
+<script>
+(function(){
+  var CS={acc:["#e91fb1","ACC"],gen:["#8b2fe0","GEN"],dat:["#4f46e5","DAT"],ins:["#6d28d9","INS"],pre:["#be185d","PREP"],nom:["#2a37b5","NOM"],inf:["#857aa3","INF"]};
+  var P6=["я","ты","он/она́","мы","вы","они́"];
+  var P4=["он","она́","оно́","они́"];
+  var V=[
+  {r:1,i:"быть",p:null,en:"to be",lvl:"a1",
+   gov:[{c:"ins",pat:"+ instrumental (кем? чем?)",ex:"Он был инжене́ром. — He was an engineer: predicate nouns in the past and future stand in the instrumental."},
+        {c:"gen",pat:"у + genitive … есть (possession)",ex:"У меня́ есть брат. — I have a brother."}],
+   asp:"Imperfective only — no perfective pair. The habitual partner is быва́ть (to be regularly, to visit).",
+   pres:null,presNote:"No present-tense forms: «есть» serves for all persons and is almost always omitted — Я студе́нт (I am a student), Он до́ма (he is at home).",
+   futP:["бу́ду","бу́дешь","бу́дет","бу́дем","бу́дете","бу́дут"],futLabel:"Future (simple)",noCompound:true,
+   pastI:["был","была́","бы́ло","бы́ли"],pastP:null,
+   impv:{i:"будь! / бу́дьте!",p:null},
+   parts:["—","бы́вший","—","—"],pnote:"бу́дущий now functions as the adjective/noun “future”.",
+   ger:["бу́дучи (bookish)","—"],
+   expr:[["мо́жет быть","maybe, perhaps"],["должно́ быть","probably, it must be"],["так и быть","so be it, all right then"],["Была́ не была́!","here goes nothing!"]],
+   dlg:[["— Где ты был в суббо́ту?","— Where were you on Saturday?"],["— Я был у ба́бушки. А ты бу́дешь до́ма ве́чером?","— I was at my grandmother's. Will you be home tonight?"],["— Бу́ду. Приходи́!","— I will. Come over!"]],
+   rel:[["быва́ть","to be (habitually), to happen"],["забы́ть","to forget"],["сбы́ться","to come true"],["добы́ть","to obtain, extract"]],
+   note:"In the present the verb disappears (Я до́ма); in the past and future it reappears — and pulls predicate nouns into the instrumental: Она́ бу́дет врачо́м (she will be a doctor)."},
+
+  {r:2,i:"говори́ть",p:"сказа́ть",en:"to speak, to say, to tell",lvl:"a1",
+   gov:[{c:"dat",pat:"+ dative (кому́? — the person told)",ex:"Скажи́ мне пра́вду. — Tell me the truth."},
+        {c:"pre",pat:"о + prepositional (о чём? — the topic)",ex:"Мы говори́м о фи́льме. — We are talking about the film."},
+        {c:"ins",pat:"с + instrumental (с кем? — the partner)",ex:"Она́ говори́т с ма́мой. — She is talking with her mum."}],
+   asp:"говори́ть (impf.) / сказа́ть (pf.). For “to talk, converse” the perfective is поговори́ть.",
+   pres:["говорю́","говори́шь","говори́т","говори́м","говори́те","говоря́т"],
+   futP:["скажу́","ска́жешь","ска́жет","ска́жем","ска́жете","ска́жут"],
+   pastI:["говори́л","говори́ла","говори́ло","говори́ли"],pastP:["сказа́л","сказа́ла","сказа́ло","сказа́ли"],
+   impv:{i:"говори́! / говори́те!",p:"скажи́! / скажи́те!"},
+   parts:["говоря́щий","говори́вший · сказа́вший","—","ска́занный"],
+   ger:["говоря́","сказа́в"],
+   expr:[["че́стно говоря́","honestly speaking"],["ина́че говоря́","in other words"],["говоря́т, что…","they say that…"],["Скажи́те, пожа́луйста…","excuse me… (the polite way to stop a stranger)"]],
+   dlg:[["— Скажи́те, пожа́луйста, вы говори́те по-англи́йски?","— Excuse me, do you speak English?"],["— Немно́го. Говори́те ме́дленно, пожа́луйста.","— A little. Please speak slowly."],["— Хорошо́. А как сказа́ть э́то по-ру́сски?","— OK. And how do you say this in Russian?"]],
+   rel:[["разгова́ривать","to converse"],["расска́зывать / рассказа́ть","to tell, narrate"],["догова́риваться / договори́ться","to arrange, agree"],["поговори́ть","to have a talk"],["выска́зывать / вы́сказать","to express, voice"]],
+   note:"говори́ть covers both “to speak” (a language, with someone) and “to say” (habitually); сказа́ть is only “to say (once, completely)”."},
+
+  {r:3,i:"мочь",p:"смочь",en:"to be able to, can",lvl:"a1",
+   gov:[{c:"inf",pat:"+ infinitive",ex:"Я могу́ помо́чь. — I can help."}],
+   asp:"мочь (impf.) / смочь (pf. = will manage to, will be able to).",
+   pres:["могу́","мо́жешь","мо́жет","мо́жем","мо́жете","мо́гут"],
+   futP:["смогу́","смо́жешь","смо́жет","смо́жем","смо́жете","смо́гут"],
+   pastI:["мог","могла́","могло́","могли́"],pastP:["смог","смогла́","смогло́","смогли́"],
+   impv:{i:null,p:null,note:"No imperative — ability cannot be ordered. Ask with «Мо́жешь…?» / «Мо́жете…?» instead."},
+   parts:["могу́щий (bookish)","мо́гший · смо́гший (rare)","—","—"],
+   ger:["—","—"],gnote:"Not used in modern Russian.",
+   expr:[["Мо́жет быть","maybe"],["Не мо́жет быть!","impossible! that can't be!"],["как мо́жно быстре́е","as fast as possible"],["Ниче́м не могу́ помо́чь","there is nothing I can do"]],
+   dlg:[["— Ты мо́жешь помо́чь мне за́втра?","— Can you help me tomorrow?"],["— За́втра не могу́, но смогу́ в четве́рг.","— Tomorrow I can't, but I'll be able to on Thursday."]],
+   rel:[["уме́ть / суме́ть","to know how to (a learned skill)"],["успе́ть","to manage in time"],["разреши́ть","to allow"],["возмо́жно","(adv.) possibly"]],
+   note:"мочь = possibility or permission; уме́ть = a learned skill. Я уме́ю пла́вать, но сего́дня не могу́ — I can swim (skill), but today I can't (circumstances)."},
+
+  {r:4,i:"знать",p:"узна́ть",en:"to know",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (кого́? что?)",ex:"Я зна́ю э́тот го́род. — I know this city."},
+        {c:"pre",pat:"о + prepositional (о ком? о чём?)",ex:"Он зна́ет о пробле́ме. — He knows about the problem."}],
+   asp:"знать (impf. = to have knowledge) / узна́ть (pf. = to find out, learn, recognize).",
+   pres:["зна́ю","зна́ешь","зна́ет","зна́ем","зна́ете","зна́ют"],
+   futP:["узна́ю","узна́ешь","узна́ет","узна́ем","узна́ете","узна́ют"],
+   pastI:["знал","зна́ла","зна́ло","зна́ли"],pastP:["узна́л","узна́ла","узна́ло","узна́ли"],
+   impv:{i:"знай! / зна́йте!",p:"узна́й! / узна́йте!"},
+   parts:["зна́ющий","зна́вший · узна́вший","—","у́знанный"],
+   ger:["зна́я","узна́в"],
+   expr:[["Кто зна́ет?","who knows?"],["Отку́да я зна́ю?","how should I know?"],["дать знать","to let (someone) know"],["знать наизу́сть","to know by heart"]],
+   dlg:[["— Ты зна́ешь, где живёт Анна?","— Do you know where Anna lives?"],["— Не зна́ю, но могу́ узна́ть.","— I don't know, but I can find out."]],
+   rel:[["узнава́ть / узна́ть","to find out, recognize"],["знако́миться / познако́миться","to get acquainted (с + instr.)"],["признава́ть / призна́ть","to admit"],["осознава́ть / осозна́ть","to realize"]],
+   note:"Careful: узна́ю (pf. future, “I will find out”) vs узнаю́ (present of узнава́ть, “I recognize”) differ only in stress."},
+
+  {r:5,i:"хоте́ть",p:"захоте́ть",en:"to want",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (a specific thing)",ex:"Я хочу́ э́ту кни́гу. — I want this (particular) book."},
+        {c:"gen",pat:"+ genitive (some of, something abstract)",ex:"Хочу́ ча́ю и тишины́. — I want some tea and some quiet."},
+        {c:"inf",pat:"+ infinitive",ex:"Мы хоти́м пое́хать домо́й. — We want to go home."}],
+   asp:"хоте́ть (impf.) / захоте́ть (pf. = to start wanting, to conceive a desire).",
+   pres:["хочу́","хо́чешь","хо́чет","хоти́м","хоти́те","хотя́т"],
+   futP:["захочу́","захо́чешь","захо́чет","захоти́м","захоти́те","захотя́т"],
+   pastI:["хоте́л","хоте́ла","хоте́ло","хоте́ли"],pastP:["захоте́л","захоте́ла","захоте́ло","захоте́ли"],
+   impv:{i:null,p:null,note:"No imperative — desire cannot be ordered. Rephrase: «Не хо́чешь…?» (wouldn't you like…?)."},
+   parts:["хотя́щий (colloq., avoided)","хоте́вший · захоте́вший","—","—"],
+   ger:["—","захоте́в"],gnote:"The old gerund хотя́ has become the conjunction “although”; use жела́я instead.",
+   expr:[["хо́чешь не хо́чешь","like it or not"],["как хоти́те","as you wish"],["Мне хо́чется… (+ dat.)","I feel like… (impersonal)"],["е́сли хо́чешь","if you like"]],
+   dlg:[["— Что ты хо́чешь на у́жин?","— What do you want for dinner?"],["— Я хочу́ пи́ццу. А ты?","— I want pizza. And you?"],["— А я про́сто хочу́ ча́ю.","— And I just want some tea. (partitive genitive!)"]],
+   rel:[["хоте́ться","impersonal: мне хо́чется — I feel like"],["расхоте́ть","to stop wanting"],["жела́ть / пожела́ть","to wish (+ gen.!)"],["мечта́ть","to dream (о + prep.)"]],
+   note:"The only “mixed-conjugation” verb in Russian: singular endings from conjugation I (хо́чешь, хо́чет), plural from conjugation II (хоти́м, хотя́т)."},
+
+  {r:6,i:"ви́деть",p:"уви́деть",en:"to see",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (кого́? что?)",ex:"Я ви́жу мо́ре. — I see the sea."}],
+   asp:"ви́деть (impf.) / уви́деть (pf. = to catch sight of).",
+   pres:["ви́жу","ви́дишь","ви́дит","ви́дим","ви́дите","ви́дят"],
+   futP:["уви́жу","уви́дишь","уви́дит","уви́дим","уви́дите","уви́дят"],
+   pastI:["ви́дел","ви́дела","ви́дело","ви́дели"],pastP:["уви́дел","уви́дела","уви́дело","уви́дели"],
+   impv:{i:null,p:null,note:"Rarely used. To say “look!”, Russian uses смотри́(те)!"},
+   parts:["ви́дящий","ви́девший · уви́девший","ви́димый (= visible)","уви́денный"],
+   ger:["ви́дя","уви́дев"],
+   expr:[["Ви́дишь ли…","you see…"],["Давно́ не ви́делись!","long time no see!"],["Там ви́дно бу́дет","we'll see (how it goes)"],["как ви́дите","as you can see"]],
+   dlg:[["— Ты ви́дел мой телефо́н?","— Have you seen my phone?"],["— Нет, не ви́дел. Посмотри́ на столе́.","— No, I haven't. Look on the table."],["— А, ви́жу его́! Спаси́бо.","— Ah, I see it! Thanks."]],
+   rel:[["ви́деться / уви́деться","to see each other"],["предви́деть","to foresee"],["ненави́деть","to hate (same root!)"],["вы́глядеть","to look (= appear)"]],
+   note:"ви́деть = to perceive with the eyes; смотре́ть = to direct your gaze. Note the д → ж mutation in the я-form only: ви́жу."},
+
+  {r:7,i:"идти́",p:"пойти́",en:"to go (on foot, one direction)",lvl:"a1",
+   gov:[{c:"acc",pat:"в / на + accusative (destination)",ex:"Я иду́ в шко́лу / на рабо́ту. — I am going to school / to work."},
+        {c:"dat",pat:"к + dative (to a person)",ex:"Мы идём к ба́бушке. — We are going to grandma's."}],
+   asp:"идти́ (impf., one direction, right now) / пойти́ (pf. = to set off). The multidirectional partner is ходи́ть (there and back, habitually).",
+   pres:["иду́","идёшь","идёт","идём","идёте","иду́т"],
+   futP:["пойду́","пойдёшь","пойдёт","пойдём","пойдёте","пойду́т"],
+   pastI:["шёл","шла","шло","шли"],pastP:["пошёл","пошла́","пошло́","пошли́"],
+   impv:{i:"иди́! / иди́те!",p:"пойди́! / пойди́те! (+ Пошли́! = let's go, colloq.)"},
+   parts:["иду́щий","ше́дший · поше́дший","—","—"],
+   ger:["идя́","пойдя́"],
+   expr:[["Идёт!","deal! agreed!"],["Дождь идёт","it is raining"],["Тебе́ идёт","it suits you"],["Фильм идёт в кино́","the film is showing"],["Пошли́!","let's go!"]],
+   dlg:[["— Куда́ ты идёшь?","— Where are you going?"],["— Я иду́ в магази́н. Пойдёшь со мной?","— I'm going to the shop. Will you come with me?"],["— Пошли́!","— Let's go!"]],
+   rel:[["ходи́ть","to go (multidirectional, habitually)"],["прийти́","to arrive, come"],["уйти́","to leave"],["вы́йти","to go out"],["найти́","to find"],["перейти́","to cross"]],
+   note:"The past tense шёл / шла comes from a completely different root — one of a handful of suppletive verbs in Russian."},
+
+  {r:8,i:"ду́мать",p:"поду́мать",en:"to think",lvl:"a1",
+   gov:[{c:"pre",pat:"о + prepositional (о ком? о чём?)",ex:"Я ду́маю о тебе́. — I am thinking about you."},
+        {c:"ins",pat:"над + instrumental (to ponder over)",ex:"Он ду́мает над зада́чей. — He is pondering the problem."}],
+   asp:"ду́мать (impf.) / поду́мать (pf. = to have a think, to think for a moment).",
+   pres:["ду́маю","ду́маешь","ду́мает","ду́маем","ду́маете","ду́мают"],
+   futP:["поду́маю","поду́маешь","поду́мает","поду́маем","поду́маете","поду́мают"],
+   pastI:["ду́мал","ду́мала","ду́мало","ду́мали"],pastP:["поду́мал","поду́мала","поду́мало","поду́мали"],
+   impv:{i:"ду́май! / ду́майте!",p:"поду́май! / поду́майте!"},
+   parts:["ду́мающий","ду́мавший · поду́мавший","—","—"],pnote:"проду́манный “well-thought-out” comes from проду́мать.",
+   ger:["ду́мая","поду́мав"],
+   expr:[["Я ду́маю, что…","I think that…"],["Да́же не ду́май!","don't even think about it!"],["Поду́маешь!","big deal! (ironic)"],["недо́лго ду́мая","without a second thought"]],
+   dlg:[["— О чём ты ду́маешь?","— What are you thinking about?"],["— Я ду́маю о рабо́те. На́до поду́мать, что де́лать да́льше.","— I'm thinking about work. I need to think about what to do next."]],
+   rel:[["приду́мывать / приду́мать","to invent, come up with"],["обду́мывать / обду́мать","to think over"],["заду́мываться / заду́маться","to fall into thought"],["переду́мать","to change one's mind"]],
+   note:null},
+
+  {r:9,i:"де́лать",p:"сде́лать",en:"to do, to make",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (что?)",ex:"Она́ де́лает уро́ки. — She is doing her homework."}],
+   asp:"де́лать (impf.) / сде́лать (pf.).",
+   pres:["де́лаю","де́лаешь","де́лает","де́лаем","де́лаете","де́лают"],
+   futP:["сде́лаю","сде́лаешь","сде́лает","сде́лаем","сде́лаете","сде́лают"],
+   pastI:["де́лал","де́лала","де́лало","де́лали"],pastP:["сде́лал","сде́лала","сде́лало","сде́лали"],
+   impv:{i:"де́лай! / де́лайте!",p:"сде́лай! / сде́лайте!"},
+   parts:["де́лающий","де́лавший · сде́лавший","—","сде́ланный"],
+   ger:["де́лая","сде́лав"],
+   expr:[["Что де́лать?","what is to be done?"],["Де́лать не́чего","nothing to be done / nothing for it"],["сде́лать вид","to pretend"],["Де́ло сде́лано","the job is done"]],
+   dlg:[["— Что ты де́лаешь?","— What are you doing?"],["— Де́лаю дома́шнее зада́ние. Уже́ почти́ всё сде́лал.","— I'm doing my homework. I've almost finished it all."]],
+   rel:[["де́латься","to become, to be done"],["переде́лывать / переде́лать","to redo"],["доде́лывать / доде́лать","to finish off"],["наде́лать","to make a lot of (mistakes, noise)"]],
+   note:"The textbook example of a regular -ать verb: master its endings and you can conjugate thousands of verbs."},
+
+  {r:10,i:"жить",p:null,en:"to live",lvl:"a1",
+   gov:[{c:"pre",pat:"в / на + prepositional (place)",ex:"Мы живём в Москве́. — We live in Moscow."},
+        {c:"ins",pat:"с + instrumental (with someone)",ex:"Он живёт с роди́телями. — He lives with his parents."}],
+   asp:"Imperfective, no true pair. прожи́ть = to live through (a period), пожи́ть = to live for a while.",
+   pres:["живу́","живёшь","живёт","живём","живёте","живу́т"],
+   futP:null,
+   pastI:["жил","жила́","жи́ло","жи́ли"],pastP:null,
+   impv:{i:"живи́! / живи́те!",p:null},
+   parts:["живу́щий","жи́вший","—","—"],
+   ger:["живя́","—"],
+   expr:[["Как живёшь?","how are you (doing)?"],["жить душа́ в ду́шу","to live in perfect harmony"],["Жи́вы-здоро́вы","alive and well"]],
+   dlg:[["— Где вы живёте?","— Where do you live?"],["— Я живу́ в Москве́, а мои́ роди́тели живу́т в Каза́ни.","— I live in Moscow, and my parents live in Kazan."]],
+   rel:[["прожива́ть / прожи́ть","to reside; to live through"],["пережива́ть / пережи́ть","to worry; to survive, endure"],["ужива́ться / ужи́ться","to get along (with someone)"],["ожива́ть / ожи́ть","to come to life"]],
+   note:null},
+
+  {r:11,i:"смотре́ть",p:"посмотре́ть",en:"to look, to watch",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (watch something)",ex:"Мы смо́трим фильм. — We are watching a film."},
+        {c:"acc",pat:"на + accusative (look at)",ex:"Она́ смо́трит на часы́. — She looks at her watch."}],
+   asp:"смотре́ть (impf.) / посмотре́ть (pf. = to take a look).",
+   pres:["смотрю́","смо́тришь","смо́трит","смо́трим","смо́трите","смо́трят"],
+   futP:["посмотрю́","посмо́тришь","посмо́трит","посмо́трим","посмо́трите","посмо́трят"],
+   pastI:["смотре́л","смотре́ла","смотре́ло","смотре́ли"],pastP:["посмотре́л","посмотре́ла","посмотре́ло","посмотре́ли"],
+   impv:{i:"смотри́! / смотри́те!",p:"посмотри́! / посмотри́те!"},
+   parts:["смотря́щий","смотре́вший · посмотре́вший","—","посмо́тренный"],
+   ger:["смотря́","посмотре́в"],gnote:"смотря́ also works as “depending on”: смотря́ како́й — depends which.",
+   expr:[["Смотри́!","look! / watch out!"],["Посмо́трим","we'll see"],["смотря́ как","it depends how"],["несмотря́ на (+ acc.)","despite"]],
+   dlg:[["— Что ты смо́тришь?","— What are you watching?"],["— Смотрю́ но́вый фильм. Хо́чешь посмотре́ть со мной?","— I'm watching a new film. Want to watch it with me?"]],
+   rel:[["осма́тривать / осмотре́ть","to examine, inspect"],["рассма́тривать / рассмотре́ть","to examine closely; to consider"],["пересма́тривать / пересмотре́ть","to rewatch; to revise"],["присма́тривать","to keep an eye on (за + instr.)"]],
+   note:null},
+
+  {r:12,i:"понима́ть",p:"поня́ть",en:"to understand",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (кого́? что?)",ex:"Я понима́ю вопро́с. — I understand the question."}],
+   asp:"понима́ть (impf.) / поня́ть (pf. = to grasp, to realize).",
+   pres:["понима́ю","понима́ешь","понима́ет","понима́ем","понима́ете","понима́ют"],
+   futP:["пойму́","поймёшь","поймёт","поймём","поймёте","пойму́т"],
+   pastI:["понима́л","понима́ла","понима́ло","понима́ли"],pastP:["по́нял","поняла́","по́няло","по́няли"],
+   impv:{i:"понима́й! / понима́йте!",p:"пойми́! / пойми́те!"},
+   parts:["понима́ющий","понима́вший · поня́вший","понима́емый","по́нятый"],
+   ger:["понима́я","поня́в"],
+   expr:[["Поня́тно.","I see. / Got it."],["Ничего́ не понима́ю!","I don't understand a thing!"],["дать поня́ть","to make it clear (to someone)"],["е́сли я пра́вильно по́нял…","if I understood correctly…"]],
+   dlg:[["— Вы понима́ете меня́?","— Do you understand me?"],["— Извини́те, я не по́нял. Повтори́те, пожа́луйста.","— Sorry, I didn't catch that. Please repeat."],["— Тепе́рь поня́тно?","— Is it clear now?"],["— Да, тепе́рь я всё по́нял!","— Yes, now I've understood everything!"]],
+   rel:[["осознава́ть / осозна́ть","to realize"],["разбира́ться / разобра́ться","to figure out (в + prep.)"],["дога́дываться / догада́ться","to guess"],["недопонима́ть","to not quite understand"]],
+   note:"Watch the past-tense stress of the perfective: по́нял, but поняла́."},
+
+  {r:13,i:"дава́ть",p:"дать",en:"to give",lvl:"a1",
+   gov:[{c:"dat",pat:"+ dative (the recipient)",ex:"Дай мне ключ. — Give me the key."},
+        {c:"acc",pat:"+ accusative (the thing given)",ex:"Она́ даёт сове́т. — She gives advice."}],
+   asp:"дава́ть (impf.) / дать (pf.).",
+   pres:["даю́","даёшь","даёт","даём","даёте","даю́т"],
+   futP:["дам","дашь","даст","дади́м","дади́те","даду́т"],
+   pastI:["дава́л","дава́ла","дава́ло","дава́ли"],pastP:["дал","дала́","да́ло / дало́","да́ли"],
+   impv:{i:"дава́й! / дава́йте!",p:"дай! / да́йте!"},
+   parts:["даю́щий","дава́вший · да́вший","дава́емый","да́нный"],
+   ger:["дава́я","дав"],
+   expr:[["Дава́й!","come on! / let's!"],["Дава́йте начнём","let's begin"],["дать сло́во","to give one's word, promise"],["Да́йте, пожа́луйста…","could I have… (in shops and cafés)"]],
+   dlg:[["— Да́йте, пожа́луйста, два биле́та.","— Two tickets, please."],["— Пожа́луйста. Дать вам програ́мму?","— Here you are. Shall I give you a programme?"],["— Да, спаси́бо!","— Yes, thank you!"]],
+   rel:[["отдава́ть / отда́ть","to give back"],["продава́ть / прода́ть","to sell"],["сдава́ть / сдать","to hand in; to rent out"],["задава́ть / зада́ть","to set (homework); to ask (a question)"],["удава́ться / уда́ться","to succeed (impersonal, + dat.)"]],
+   note:"дать is one of only four truly irregular verbs in Russian (with есть, хоте́ть and бежа́ть) — its future must simply be memorized."},
+
+  {r:14,i:"брать",p:"взять",en:"to take",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (кого́? что?)",ex:"Возьми́ зонт! — Take an umbrella!"},
+        {c:"gen",pat:"у + genitive (from someone)",ex:"Я взял кни́гу у дру́га. — I borrowed a book from a friend."}],
+   asp:"брать (impf.) / взять (pf.) — a fully suppletive pair: two different roots.",
+   pres:["беру́","берёшь","берёт","берём","берёте","беру́т"],
+   futP:["возьму́","возьмёшь","возьмёт","возьмём","возьмёте","возьму́т"],
+   pastI:["брал","брала́","бра́ло","бра́ли"],pastP:["взял","взяла́","взя́ло","взя́ли"],
+   impv:{i:"бери́! / бери́те!",p:"возьми́! / возьми́те!"},
+   parts:["беру́щий","бра́вший · взя́вший","—","взя́тый"],
+   ger:["беря́","взяв"],
+   expr:[["взять себя́ в ру́ки","to pull oneself together"],["брать приме́р с (+ gen.)","to follow someone's example"],["Отку́да ты взял?","where did you get that idea?"],["взять о́тпуск","to take a holiday"]],
+   dlg:[["— Ты берёшь зонт?","— Are you taking an umbrella?"],["— Да, возьму́. Возьми́ и ты — бу́дет дождь.","— Yes, I will. You take one too — it's going to rain."]],
+   rel:[["выбира́ть / вы́брать","to choose"],["забира́ть / забра́ть","to pick up, take away"],["собира́ть / собра́ть","to collect, gather"],["убира́ть / убра́ть","to tidy, remove"]],
+   note:null},
+
+  {r:15,i:"рабо́тать",p:null,en:"to work",lvl:"a1",
+   gov:[{c:"ins",pat:"+ instrumental (as a profession — кем?)",ex:"Она́ рабо́тает врачо́м. — She works as a doctor."},
+        {c:"ins",pat:"над + instrumental (work on something)",ex:"Мы рабо́таем над прое́ктом. — We are working on a project."},
+        {c:"pre",pat:"в / на + prepositional (workplace)",ex:"Он рабо́тает в ба́нке. — He works at a bank."}],
+   asp:"Imperfective. порабо́тать = to work for a while; зарабо́тать = to earn.",
+   pres:["рабо́таю","рабо́таешь","рабо́тает","рабо́таем","рабо́таете","рабо́тают"],
+   futP:null,
+   pastI:["рабо́тал","рабо́тала","рабо́тало","рабо́тали"],pastP:null,
+   impv:{i:"рабо́тай! / рабо́тайте!",p:null},
+   parts:["рабо́тающий","рабо́тавший","—","—"],
+   ger:["рабо́тая","—"],
+   expr:[["Кем вы рабо́таете?","what do you do for a living?"],["Магази́н не рабо́тает","the shop is closed"],["рабо́тать как ло́шадь","to work like a horse"]],
+   dlg:[["— Кем вы рабо́таете?","— What do you do (lit. as whom do you work)?"],["— Я рабо́таю учи́телем в шко́ле. А вы?","— I work as a teacher in a school. And you?"],["— А я до́ма рабо́таю над свои́м прое́ктом.","— And I work from home on my own project."]],
+   rel:[["зараба́тывать / зарабо́тать","to earn"],["разраба́тывать / разрабо́тать","to develop"],["обраба́тывать / обрабо́тать","to process"],["перераба́тывать","to recycle; to overwork"]],
+   note:"The profession you work as goes in the instrumental — рабо́тать учи́телем, врачо́м, инжене́ром."},
+
+  {r:16,i:"люби́ть",p:"полюби́ть",en:"to love, to like",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (кого́? что?)",ex:"Я люблю́ му́зыку. — I love music."},
+        {c:"inf",pat:"+ infinitive (love doing)",ex:"Он лю́бит чита́ть. — He loves reading."}],
+   asp:"люби́ть (impf.) / полюби́ть (pf. = to come to love, to grow fond of).",
+   pres:["люблю́","лю́бишь","лю́бит","лю́бим","лю́бите","лю́бят"],
+   futP:["полюблю́","полю́бишь","полю́бит","полю́бим","полю́бите","полю́бят"],
+   pastI:["люби́л","люби́ла","люби́ло","люби́ли"],pastP:["полюби́л","полюби́ла","полюби́ло","полюби́ли"],
+   impv:{i:"люби́! / люби́те!",p:null},
+   parts:["лю́бящий","люби́вший · полюби́вший","люби́мый (= favourite, beloved)","—"],
+   ger:["любя́","полюби́в"],
+   expr:[["Я тебя́ люблю́","I love you"],["люби́мое блю́до","favourite dish"],["влюби́ться по́ уши","to fall head over heels in love"]],
+   dlg:[["— Ты лю́бишь ру́сскую ку́хню?","— Do you like Russian cuisine?"],["— Люблю́! Осо́бенно люблю́ борщ.","— I do! I especially love borscht."]],
+   rel:[["нра́виться / понра́виться","to please: мне нра́вится… (+ dat. construction!)"],["влюбля́ться / влюби́ться","to fall in love (в + acc.)"],["разлюби́ть","to fall out of love"],["любова́ться","to admire (+ instr.)"]],
+   note:"For mild liking use нра́виться (Мне нра́вится э́тот фильм); люби́ть is stronger or habitual. Note the л that appears in the я-form only: люблю́."},
+
+  {r:17,i:"писа́ть",p:"написа́ть",en:"to write",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (what is written)",ex:"Он пи́шет письмо́. — He is writing a letter."},
+        {c:"dat",pat:"+ dative (to whom)",ex:"Напиши́ мне! — Write to me!"}],
+   asp:"писа́ть (impf.) / написа́ть (pf.).",
+   pres:["пишу́","пи́шешь","пи́шет","пи́шем","пи́шете","пи́шут"],
+   futP:["напишу́","напи́шешь","напи́шет","напи́шем","напи́шете","напи́шут"],
+   pastI:["писа́л","писа́ла","писа́ло","писа́ли"],pastP:["написа́л","написа́ла","написа́ло","написа́ли"],
+   impv:{i:"пиши́! / пиши́те!",p:"напиши́! / напиши́те!"},
+   parts:["пи́шущий","писа́вший · написа́вший","—","напи́санный"],
+   ger:["—","написа́в"],gnote:"No imperfective gerund in modern use.",
+   expr:[["Как э́то пи́шется?","how is that spelled?"],["Напиши́ мне сообще́ние","text me / send me a message"],["писа́ть от руки́","to write by hand"]],
+   dlg:[["— Кому́ ты пи́шешь?","— Who are you writing to?"],["— Пишу́ ба́бушке. Хочу́ написа́ть ей дли́нное письмо́.","— I'm writing to my grandmother. I want to write her a long letter."]],
+   rel:[["запи́сывать / записа́ть","to write down; to record"],["подпи́сывать / подписа́ть","to sign"],["опи́сывать / описа́ть","to describe"],["перепи́сываться","to correspond, text each other"]],
+   note:"Note the с → ш mutation throughout the present tense: пишу́, пи́шешь…"},
+
+  {r:18,i:"чита́ть",p:"прочита́ть",en:"to read",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (what is read)",ex:"Я чита́ю кни́гу. — I am reading a book."},
+        {c:"pre",pat:"о + prepositional (read about)",ex:"Мы чита́ли о войне́. — We read about the war."}],
+   asp:"чита́ть (impf.) / прочита́ть (pf. = to read through, finish reading).",
+   pres:["чита́ю","чита́ешь","чита́ет","чита́ем","чита́ете","чита́ют"],
+   futP:["прочита́ю","прочита́ешь","прочита́ет","прочита́ем","прочита́ете","прочита́ют"],
+   pastI:["чита́л","чита́ла","чита́ло","чита́ли"],pastP:["прочита́л","прочита́ла","прочита́ло","прочита́ли"],
+   impv:{i:"чита́й! / чита́йте!",p:"прочита́й! / прочита́йте!"},
+   parts:["чита́ющий","чита́вший · прочита́вший","чита́емый","прочи́танный"],
+   ger:["чита́я","прочита́в"],
+   expr:[["чита́ть вслух","to read aloud"],["чита́ть про себя́","to read silently (to oneself)"],["чита́ть ме́жду строк","to read between the lines"]],
+   dlg:[["— Что ты сейча́с чита́ешь?","— What are you reading at the moment?"],["— Чита́ю «Ма́стера и Маргари́ту». Уже́ прочита́л полови́ну!","— I'm reading The Master and Margarita. I've already read half!"]],
+   rel:[["перечи́тывать / перечита́ть","to reread"],["дочи́тывать / дочита́ть","to finish reading"],["зачи́тываться","to be engrossed in reading"],["счита́ть","to count; to consider"]],
+   note:null},
+
+  {r:19,i:"ждать",p:"подожда́ть",en:"to wait (for)",lvl:"a2",
+   gov:[{c:"gen",pat:"+ genitive (something indefinite)",ex:"Я жду отве́та. — I am waiting for an answer."},
+        {c:"acc",pat:"+ accusative (a specific person or thing)",ex:"Я жду Ма́шу. — I am waiting for Masha."}],
+   asp:"ждать (impf.) / подожда́ть (pf. = to wait a bit).",
+   pres:["жду","ждёшь","ждёт","ждём","ждёте","ждут"],
+   futP:["подожду́","подождёшь","подождёт","подождём","подождёте","подожду́т"],
+   pastI:["ждал","ждала́","жда́ло","жда́ли"],pastP:["подожда́л","подождала́","подожда́ло","подожда́ли"],
+   impv:{i:"жди! / жди́те!",p:"подожди́! / подожди́те!"},
+   parts:["жду́щий","жда́вший · подожда́вший","—","—"],
+   ger:["—","подожда́в"],gnote:"Use ожида́я (from ожида́ть) as the imperfective gerund.",
+   expr:[["Подожди́ мину́тку!","wait a minute!"],["жду не дожду́сь","I can't wait"],["Вре́мя не ждёт","time waits for no one"]],
+   dlg:[["— Кого́ ты ждёшь?","— Who are you waiting for?"],["— Жду Ма́шу. Подожди́ со мной!","— I'm waiting for Masha. Wait with me!"],["— Ла́дно, подожду́.","— OK, I'll wait."]],
+   rel:[["ожида́ть","to expect (+ gen.)"],["дожида́ться / дожда́ться","to wait until (+ gen.)"],["пережда́ть","to wait (something) out"]],
+   note:"The classic case-choice verb: genitive for the indefinite (жду письма́ — some letter), accusative for the specific (жду сестру́ — my sister)."},
+
+  {r:28,i:"помога́ть",p:"помо́чь",en:"to help",lvl:"a1",
+   gov:[{c:"dat",pat:"+ dative (кому́? — the person helped, never accusative!)",ex:"Я помога́ю ма́ме. — I help my mum."},
+        {c:"ins",pat:"с + instrumental (with a task)",ex:"Помоги́ мне с перево́дом. — Help me with the translation."}],
+   asp:"помога́ть (impf.) / помо́чь (pf.).",
+   pres:["помога́ю","помога́ешь","помога́ет","помога́ем","помога́ете","помога́ют"],
+   futP:["помогу́","помо́жешь","помо́жет","помо́жем","помо́жете","помо́гут"],
+   pastI:["помога́л","помога́ла","помога́ло","помога́ли"],pastP:["помо́г","помогла́","помогло́","помогли́"],
+   impv:{i:"помога́й! / помога́йте!",p:"помоги́! / помоги́те!"},
+   parts:["помога́ющий","помога́вший · помо́гший","—","—"],
+   ger:["помога́я","помо́гши (bookish, rare)"],
+   expr:[["Помоги́те!","help!"],["Чем могу́ помо́чь?","how can I help?"],["Э́то не помо́жет","that won't help"]],
+   dlg:[["— Помоги́ мне, пожа́луйста, с э́той су́мкой.","— Please help me with this bag."],["— Коне́чно, помогу́! Дава́й.","— Of course I'll help! Give it here."],["— Ты всегда́ помога́ешь лю́дям. Спаси́бо!","— You always help people. Thank you!"]],
+   rel:[["подде́рживать / поддержа́ть","to support"],["выруча́ть / вы́ручить","to help out, rescue"],["спаса́ть / спасти́","to save"]],
+   note:"The person you help is always dative: помога́ть дру́гу, ма́ме, лю́дям. Note the г → ж alternation in the perfective future: помогу́, помо́жешь… помо́гут."},
+
+  {r:33,i:"покупа́ть",p:"купи́ть",en:"to buy",lvl:"a1",
+   gov:[{c:"acc",pat:"+ accusative (the thing bought)",ex:"Я купи́л хлеб. — I bought bread."},
+        {c:"dat",pat:"+ dative (for whom)",ex:"Мы ку́пим ей пода́рок. — We will buy her a present."}],
+   asp:"покупа́ть (impf.) / купи́ть (pf.).",
+   pres:["покупа́ю","покупа́ешь","покупа́ет","покупа́ем","покупа́ете","покупа́ют"],
+   futP:["куплю́","ку́пишь","ку́пит","ку́пим","ку́пите","ку́пят"],
+   pastI:["покупа́л","покупа́ла","покупа́ло","покупа́ли"],pastP:["купи́л","купи́ла","купи́ло","купи́ли"],
+   impv:{i:"покупа́й! / покупа́йте!",p:"купи́! / купи́те!"},
+   parts:["покупа́ющий","покупа́вший · купи́вший","покупа́емый","ку́пленный"],
+   ger:["покупа́я","купи́в"],
+   expr:[["де́лать поку́пки","to do the shopping"],["купи́ть кота́ в мешке́","to buy a pig in a poke (lit. a cat in a sack)"],["За ско́лько ты э́то купи́л?","how much did you buy it for?"]],
+   dlg:[["— Что ты купи́л в магази́не?","— What did you buy at the shop?"],["— Купи́л хлеб и молоко́. Ка́ждую суббо́ту я покупа́ю проду́кты на неде́лю.","— I bought bread and milk. Every Saturday I buy groceries for the week."]],
+   rel:[["продава́ть / прода́ть","to sell"],["закупа́ть / закупи́ть","to buy in bulk"],["выкупа́ть / вы́купить","to buy out, redeem"],["распродава́ть","to sell off"]],
+   note:"A famous trap: unprefixed купи́ть is the perfective; the imperfective needs по-: покупа́ть. Note also п → пл in the я-form: куплю́."},
+
+  {r:38,i:"учи́ться",p:"научи́ться",en:"to study, to learn",lvl:"a1",
+   gov:[{c:"dat",pat:"+ dative (the subject learned)",ex:"Я учу́сь ру́сскому языку́. — I am learning Russian."},
+        {c:"pre",pat:"в / на + prepositional (the institution)",ex:"Она́ у́чится в университе́те. — She studies at university."},
+        {c:"inf",pat:"научи́ться + infinitive",ex:"Я научи́лся пла́вать. — I learned to swim."}],
+   asp:"учи́ться (impf.) / научи́ться (pf. = to master, to have learned).",
+   pres:["учу́сь","у́чишься","у́чится","у́чимся","у́читесь","у́чатся"],
+   futP:["научу́сь","нау́чишься","нау́чится","нау́чимся","нау́читесь","нау́чатся"],
+   pastI:["учи́лся","учи́лась","учи́лось","учи́лись"],pastP:["научи́лся","научи́лась","научи́лось","научи́лись"],
+   impv:{i:"учи́сь! / учи́тесь!",p:"научи́сь! / научи́тесь!"},
+   parts:["уча́щийся (also the noun “student”)","учи́вшийся · научи́вшийся","—","—"],
+   ger:["уча́сь","научи́вшись"],
+   expr:[["Век живи́ — век учи́сь","live and learn"],["учи́ться на оши́бках","to learn from one's mistakes"],["учи́ться на пятёрки","to get top marks"]],
+   dlg:[["— Где ты у́чишься?","— Where do you study?"],["— Я учу́сь в университе́те. Хочу́ научи́ться программи́ровать.","— I study at university. I want to learn to code."]],
+   rel:[["учи́ть / вы́учить","to memorize (+ acc.); to teach (кого́ + чему́)"],["изуча́ть / изучи́ть","to study in depth (+ acc.)"],["обуча́ть / обучи́ть","to train, instruct"],["преподава́ть","to teach (as a job)"]],
+   note:"Three “study” verbs: учи́ться (to be a student; to learn, + dat.), учи́ть (to memorize, + acc.), изуча́ть (to study a subject, + acc.)."},
+
+  {r:44,i:"занима́ться",p:"заня́ться",en:"to do, to be occupied with",lvl:"a2",
+   gov:[{c:"ins",pat:"+ instrumental (чем? — the activity, never accusative!)",ex:"Я занима́юсь спо́ртом. — I do sport."}],
+   asp:"занима́ться (impf.) / заня́ться (pf. = to take up, to get down to).",
+   pres:["занима́юсь","занима́ешься","занима́ется","занима́емся","занима́етесь","занима́ются"],
+   futP:["займу́сь","займёшься","займётся","займёмся","займётесь","займу́тся"],
+   pastI:["занима́лся","занима́лась","занима́лось","занима́лись"],pastP:["занялся́","заняла́сь","заняло́сь","заняли́сь"],
+   impv:{i:"занима́йся! / занима́йтесь!",p:"займи́сь! / займи́тесь!"},
+   parts:["занима́ющийся","занима́вшийся · заня́вшийся","—","—"],
+   ger:["занима́ясь","заня́вшись"],
+   expr:[["Чем ты занима́ешься?","what do you do? / what are you up to?"],["занима́ться спо́ртом","to do sport"],["заня́ться де́лом","to get down to business"]],
+   dlg:[["— Чем ты занима́ешься в свобо́дное вре́мя?","— What do you do in your free time?"],["— Занима́юсь спо́ртом и му́зыкой. А неда́вно заня́лся йо́гой.","— I do sport and music. And recently I took up yoga."]],
+   rel:[["занима́ть / заня́ть","to occupy; to borrow"],["увлека́ться / увле́чься","to be keen on (+ instr.)"],["интересова́ться","to be interested in (+ instr.)"]],
+   note:"The activity is always instrumental: спо́ртом, му́зыкой, ру́сским языко́м. This is the standard answer to «Чем ты занима́ешься?»"},
+
+  {r:47,i:"боя́ться",p:null,en:"to be afraid of, to fear",lvl:"a2",
+   gov:[{c:"gen",pat:"+ genitive (кого́? чего́? — never accusative!)",ex:"Он бои́тся темноты́. — He is afraid of the dark."},
+        {c:"inf",pat:"+ infinitive",ex:"Бою́сь опозда́ть. — I am afraid of being late."}],
+   asp:"Imperfective. The perfective sense is supplied by испуга́ться (to get frightened).",
+   pres:["бою́сь","бои́шься","бои́тся","бои́мся","бои́тесь","боя́тся"],
+   futP:null,
+   pastI:["боя́лся","боя́лась","боя́лось","боя́лись"],pastP:null,
+   impv:{i:"не бо́йся! / не бо́йтесь!",p:null,note:"The imperative is almost always negative: don't be afraid!"},
+   parts:["боя́щийся","боя́вшийся","—","—"],
+   ger:["боя́сь","—"],
+   expr:[["Бою́сь, что…","I'm afraid that…"],["Не бо́йся!","don't be afraid!"],["У стра́ха глаза́ велики́","fear has big eyes (proverb: fear exaggerates)"]],
+   dlg:[["— Ты бои́шься соба́к?","— Are you afraid of dogs?"],["— Нет, я бою́сь то́лько пауко́в!","— No, I'm only afraid of spiders!"],["— Не бо́йся, здесь их нет.","— Don't worry, there aren't any here."]],
+   rel:[["испуга́ться","to get frightened (+ gen.)"],["опаса́ться","to be wary of (+ gen.)"],["пуга́ть / испуга́ть","to frighten"],["волнова́ться","to worry (за + acc.)"]],
+   note:"A textbook genitive verb — whatever you fear stands in the genitive: боя́ться экза́мена, высоты́, соба́к."},
+
+  {r:62,i:"звони́ть",p:"позвони́ть",en:"to call, to phone",lvl:"a1",
+   gov:[{c:"dat",pat:"+ dative (кому́? — the person called, never accusative!)",ex:"Позвони́ мне ве́чером. — Call me tonight."},
+        {c:"acc",pat:"в / на + accusative (an institution)",ex:"Я звоню́ в банк. — I am calling the bank."}],
+   asp:"звони́ть (impf.) / позвони́ть (pf.).",
+   pres:["звоню́","звони́шь","звони́т","звони́м","звони́те","звоня́т"],
+   futP:["позвоню́","позвони́шь","позвони́т","позвони́м","позвони́те","позвоня́т"],
+   pastI:["звони́л","звони́ла","звони́ло","звони́ли"],pastP:["позвони́л","позвони́ла","позвони́ло","позвони́ли"],
+   impv:{i:"звони́! / звони́те!",p:"позвони́! / позвони́те!"},
+   parts:["звоня́щий","звони́вший · позвони́вший","—","—"],
+   ger:["звоня́","позвони́в"],
+   expr:[["Кто звони́т?","who is calling?"],["Позвони́ мне!","call me!"],["Не могу́ дозвони́ться","I can't get through"]],
+   dlg:[["— Кому́ ты звони́шь?","— Who are you calling?"],["— Звоню́ ма́ме. Она́ проси́ла позвони́ть ей ве́чером.","— I'm calling my mum. She asked me to call her in the evening."]],
+   rel:[["перезва́нивать / перезвони́ть","to call back"],["созва́ниваться / созвони́ться","to arrange by phone, call each other"],["дозва́ниваться / дозвони́ться","to get through (до + gen.)"]],
+   note:"Stress stays on the ending: звони́шь, звони́т — never зво́нит (a famous shibboleth even among native speakers)."}
+  ];
+
+  function ds(s){return s.replace(/́/g,"").toLowerCase();}
+  function grid6(f){var h='<div class="vd-grid">';for(var k=0;k<6;k++){h+='<span class="prs">'+P6[k]+'</span><span class="frm">'+f[k]+'</span>';}return h+'</div>';}
+  function govRow(g){var cs=CS[g.c];return '<div class="vd-gov-row"><span class="vd-cbadge" style="background:'+cs[0]+'">'+cs[1]+'</span><span class="pat">'+g.pat+'</span><span class="gex">'+g.ex+'</span></div>';}
+  function card(v){
+    var main=CS[v.gov[0].c];
+    var search=ds(v.i+' '+(v.p||'')+' '+v.en+' '+v.expr.map(function(e){return e[0]+' '+e[1];}).join(' ')+' '+v.rel.map(function(e){return e[0]+' '+e[1];}).join(' '));
+    var h='<div class="vd-card" data-vs="'+search+'">';
+    h+='<div class="vd-head"><div class="vd-rank"><b>#'+v.r+'</b><span>freq</span></div>';
+    h+='<div class="vd-hgroup"><div class="vd-inf">'+v.i+(v.p?'<span class="vd-slash"> / </span><span class="vd-perf">'+v.p+'</span>':'')+'</div>';
+    h+='<div class="vd-en">'+v.en+' · <span class="cefr '+v.lvl+'">'+v.lvl.toUpperCase()+'</span></div></div>';
+    h+='<span class="vd-pill" style="background:'+main[0]+'">+ '+main[1]+'</span><span class="vd-hint">tap to open ▾</span></div>';
+    h+='<div class="vd-body">';
+    h+='<h5>Case government · Управле́ние</h5>'+v.gov.map(govRow).join('');
+    h+='<h5>Aspect pair · Вид</h5><p class="vd-asp">'+v.asp+'</p>';
+    h+='<h5>Conjugation · Спряже́ние</h5><div class="vd-cols">';
+    h+='<div><h6>Present (imperfective)</h6>'+(v.pres?grid6(v.pres):'<p class="vd-asp">'+(v.presNote||'—')+'</p>')+'</div>';
+    h+='<div><h6>'+(v.futLabel||'Future (perfective — '+v.p+')')+'</h6>'+(v.futP?grid6(v.futP):'<p class="vd-asp">— (no perfective; use the compound future below)</p>')+'</div>';
+    h+='</div>';
+    if(!v.noCompound){h+='<div class="vd-futnote">Imperfective (compound) future: бу́ду / бу́дешь / бу́дет / бу́дем / бу́дете / бу́дут + '+v.i+'.</div>';}
+    h+='<h5>Past tense · Проше́дшее вре́мя</h5><div class="tbl-scroll"><table class="mini"><thead><tr><th></th><th>'+v.i+' (impf.)</th>'+(v.pastP?'<th>'+v.p+' (pf.)</th>':'')+'</tr></thead><tbody>';
+    for(var k=0;k<4;k++){h+='<tr><th>'+P4[k]+'</th><td>'+v.pastI[k]+'</td>'+(v.pastP?'<td>'+v.pastP[k]+'</td>':'')+'</tr>';}
+    h+='</tbody></table></div>';
+    h+='<h5>Imperative · Повели́тельное наклоне́ние</h5><div class="vd-impv">';
+    if(v.impv.i){h+='<b>'+v.impv.i+'</b> <span class="lbl">(impf.)</span>';}
+    if(v.impv.p){h+=(v.impv.i?' &nbsp;·&nbsp; ':'')+'<b>'+v.impv.p+'</b> <span class="lbl">(pf.)</span>';}
+    if(!v.impv.i&&!v.impv.p){h+='— ';}
+    if(v.impv.note){h+=' <span class="lbl">'+v.impv.note+'</span>';}
+    h+='</div>';
+    h+='<h5>Participles · Прича́стия</h5><div class="tbl-scroll"><table class="mini"><tbody>';
+    var pl=["Present active","Past active","Present passive","Past passive"];
+    for(var k=0;k<4;k++){h+='<tr><th>'+pl[k]+'</th><td>'+v.parts[k]+'</td></tr>';}
+    h+='</tbody></table></div>';
+    if(v.pnote){h+='<p class="vd-asp" style="font-size:13px;">'+v.pnote+'</p>';}
+    h+='<h5>Gerunds · Дееприча́стия</h5><div class="tbl-scroll"><table class="mini"><tbody>';
+    h+='<tr><th>Imperfective (“while doing”)</th><td>'+v.ger[0]+'</td></tr><tr><th>Perfective (“having done”)</th><td>'+v.ger[1]+'</td></tr>';
+    h+='</tbody></table></div>';
+    if(v.gnote){h+='<p class="vd-asp" style="font-size:13px;">'+v.gnote+'</p>';}
+    h+='<h5>Common expressions · Выраже́ния</h5>';
+    h+=v.expr.map(function(e){return '<div class="vd-expr"><b>'+e[0]+'</b> — <span class="xen">'+e[1]+'</span></div>';}).join('');
+    h+='<h5>Example conversation · Диало́г</h5><div class="ex">';
+    h+=v.dlg.map(function(d){return '<div class="ex-row"><div class="e-ru">'+d[0]+'</div><div class="e-en">'+d[1]+'</div></div>';}).join('');
+    h+='</div>';
+    h+='<h5>Related verbs · Ро́дственные глаго́лы</h5><div class="chips">';
+    h+=v.rel.map(function(e){return '<span class="chip"><b>'+e[0]+'</b> '+e[1]+'</span>';}).join('');
+    h+='</div>';
+    if(v.note){h+='<div class="vd-note">'+v.note+'</div>';}
+    h+='</div></div>';
+    return h;
+  }
+  var body=document.getElementById('vdictBody');
+  body.innerHTML=V.map(card).join('');
+  Array.prototype.forEach.call(body.querySelectorAll('.vd-head'),function(head){
+    head.addEventListener('click',function(){head.parentNode.classList.toggle('open');});
+  });
+  var inp=document.getElementById('vdictSearch');
+  inp.addEventListener('input',function(){
+    var q=ds(inp.value.trim());
+    Array.prototype.forEach.call(body.querySelectorAll('.vd-card'),function(c){
+      c.style.display=(!q||c.getAttribute('data-vs').indexOf(q)!==-1)?'':'none';
+    });
+  });
+})();
+</script>
+
+<!-- ===== APP. H — VERB TEST ===== -->
 <section id="verbtest">
-  <span class="sec-tag">Appendix G · Test</span>
+  <span class="sec-tag">Appendix H · Test</span>
   <h2 class="sec">50-Question Verb Test<span class="ru">Тест: 50 вопросов по глаголам</span></h2>
   <p class="lead">A randomly generated test drawn from the verb list above. Each run picks 50 fresh questions — meanings, aspect partners, and reverse lookups. Answer them all, then check your score.</p>
   <div class="testbar">
@@ -5412,7 +5916,7 @@ window.RU_VERBS = [{"ru": "быть", "en": "to be, have", "pair": "imperfective
 </div>
 
 <section id="roadmap">
-  <span class="sec-tag">Appendix H · Systematic study path</span>
+  <span class="sec-tag">Appendix I · Systematic study path</span>
   <h2 class="sec">The CEFR Roadmap — A1 → C1<span class="ru">Карта изучения языка</span></h2>
   <p class="lead">Built around the CEFR descriptors, with rough hour estimates and the actual chapters of this reference to work through. Languages are not climbed in straight lines — but a clear map helps you see where you are.</p>
 
@@ -5634,7 +6138,7 @@ window.RU_VERBS = [{"ru": "быть", "en": "to be, have", "pair": "imperfective
 
 <!-- ===== FLUENCY & IDIOM — APPENDIX I ===== -->
 <section id="fluency">
-  <span class="sec-tag">Appendix I · Fluency &amp; idiom · <span class="cefr b1">B1</span>–<span class="cefr c1">C1</span></span>
+  <span class="sec-tag">Appendix J · Fluency &amp; idiom · <span class="cefr b1">B1</span>–<span class="cefr c1">C1</span></span>
   <h2 class="sec">Fluency Extras<span class="ru">К беглой речи</span></h2>
   <p class="lead">Grammar gets you understood; collocations, fillers, and fixed phrases get you fluent. This section gathers the small, high-frequency pieces that bridge "correct" Russian and "natural" Russian.</p>
 
@@ -5757,7 +6261,7 @@ window.RU_VERBS = [{"ru": "быть", "en": "to be, have", "pair": "imperfective
 <section id="closing">
   <div class="box tip">
     <div class="bx-t">How to use this reference</div>
-    Work through it with Appendix B as your map, or jump straight to a case with the sidebar. Use the search box at the top of the sidebar to filter chapters. Every chapter ends with a short self-check — tap an answer to see whether it is right and why. The <b>Master Grammar Grid</b> (Appendix D) is the one-page cheat sheet; <b>Core Vocabulary</b> and <b>Essential Verbs</b> (E–F) have their own search filters; and the <b>50-Question Verb Test</b> (Appendix G) generates a fresh test every time you press the button. Stress is marked on key words (<span class="ru-word">хорошо́</span>); the small monospace line under examples is a pronunciation guide.
+    Work through it with Appendix B as your map, or jump straight to a case with the sidebar. Use the search box at the top of the sidebar to filter chapters. Every chapter ends with a short self-check — tap an answer to see whether it is right and why. The <b>Master Grammar Grid</b> (Appendix D) is the one-page cheat sheet; <b>Core Vocabulary</b> and <b>Essential Verbs</b> (E–F) have their own search filters; and the <b>Verb Deep-Dive Pages</b> (Appendix G) give the 25 highest-value verbs a full page each — conjugation, participles, gerunds, case government, expressions and a model dialogue; and the <b>50-Question Verb Test</b> (Appendix H) generates a fresh test every time you press the button. Stress is marked on key words (<span class="ru-word">хорошо́</span>); the small monospace line under examples is a pronunciation guide.
   </div>
   <p style="text-align:center;color:var(--ink-faint);font-family:'PT Sans',sans-serif;font-size:13px;margin-top:30px;">
     Уда́чи в изуче́нии ру́сского языка́! &nbsp;·&nbsp; Good luck with your Russian.
